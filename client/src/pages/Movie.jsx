@@ -1,16 +1,14 @@
 import React from 'react'
 
 //components
-import NowPlaying from '../components/MovieNowPlaying'
-import Upcoming from '../components/MovieUpcoming'
-import Popular from '../components/MoviePopular'
+import Container from '../components/Container'
 
 export default function Movie() {
     return (
         <div className="container">
-            <NowPlaying />
-            <Upcoming />
-            <Popular />
+            <Container url={'/3/movie/now_playing?api_key='} title={'Now Playing'}/>
+            <Container url={'/3/movie/upcoming?api_key='} title={'Coming Soon'}/>
+            <Container url={'/3/movie/popular?api_key='} title={'Popular this week'}/>
         </div>
     )
 }

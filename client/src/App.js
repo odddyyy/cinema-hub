@@ -32,7 +32,7 @@ const routes = [
 function App() {
   return (
     <Router>
-      <div className="main-page">
+      <div className="main-page pb-5">
         <Navbar />
         <Switch>
           {routes.map((i, idx) => (
